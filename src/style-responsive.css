@@ -1,0 +1,177 @@
+
+
+@media only screen and (max-width: 1300px) {
+    .navbar{
+        flex-direction: column;
+        width: 100%;
+        position: relative;
+    }
+    .logo{
+        width: 100%;
+    }
+    .nav{
+        width: 100%;
+        text-align: right;
+        min-width: 549px;
+        background-color: rgba(128, 128, 128, 0.288);
+    }
+    .button button{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .container-1st{
+        flex-direction: column;
+        position: relative;
+    }
+    .container-1st .description{
+        width: 100%;
+    }
+    .description *{
+        margin: 0;
+    }
+    .description p{
+        width: 80%;
+    }
+    .desc-content{
+        padding-top: 30px;
+    }
+    .container-1st .img{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        min-width: 350px;
+        z-index:-1;
+        opacity: 0.5;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .container-2nd{
+        display: flex;
+        padding:150px 0;
+    }
+    .container-2nd .content{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .container-2nd .card-list{
+        flex-direction: column;
+        height: 100vh;
+        overflow-y: scroll;
+    }
+    .card-list .card{
+        width: 100%;
+    }
+
+    .container-3rd{
+        flex-direction: column;
+        width: 100%;
+        text-align:justify ;
+    }
+    .container-3rd > *:not(.bg){
+        width: 100%;
+    }
+    .container-4th{
+        position: relative;
+    }
+    .container-4th>div:not(.bg2){
+        flex-direction: column;
+    }
+    .container-4th .content-section:nth-child(2){
+        position: absolute;
+        opacity: 0.7;
+        right: -300;
+        top: 100;
+        z-index: -1;
+    }
+    .container-4th .content-section:nth-child(2) div{
+        bottom: 300;
+        right: 300;
+        flex-direction: column;
+        width: fit-content;
+    }
+
+    .container-4th ul{
+         width: 60%;
+         text-align: justify;
+    }
+
+    .container-5th{
+        flex-direction: column;
+        padding: 150px 0;
+        height: 100vh;
+        position: relative;
+    }
+    .container-5th .content-section:first-child img{
+        min-width: 600px;
+    }
+    .container-5th .content-section:first-child{
+        position: absolute;
+        width: 70%;
+        right: 0;
+        z-index: -1;
+        opacity: 0.2;
+    }
+    .bg2{
+        z-index: -2;
+        left: -200;
+        right: -200;
+        top: 0;
+    }
+
+    .container-7th .content-section div{
+        left: 0;
+        bottom: 4vw;
+    }
+
+    .container-6th .card-list{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 15px;
+        max-height: 65vh;
+        overflow-y: scroll;
+    }
+    .container-6th .card{
+        width: 50%
+    }
+    .container-6th .card ul{
+        columns: 2;
+        -webkit-columns: 2;
+        -moz-columns: 2;
+    }
+    
+    .container-8th .content-section:nth-child(2) div{
+        flex-wrap: wrap;
+    }
+    .testimoni{
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .testimoni{
+        width: 100%;
+    }
+    .container-6th .card{
+        width: 100%;
+    }
+    .container-8th{
+        overflow-y: scroll;
+    }
+    .container-8th .content-section:first-child{
+        flex-direction: column;
+    }
+    .container-8th .content-section:first-child div{
+        width: 100%;
+    }
+
+    .container-9th p divS{
+        width: 80%;
+    }
+}
+

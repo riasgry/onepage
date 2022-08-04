@@ -9,7 +9,7 @@ body{
 }
 h1{
     line-height: 62.5px;
-    font-size: 48px;
+    font-size: 3.5vw;
     font-weight: 500;
 }
 h2{
@@ -34,7 +34,7 @@ button{
 .background{
     background: linear-gradient(180deg, #2F364B 0%, #262B3D 85.25%);;
     width: 100vw;
-    height: 95vw;
+    height: 200vh;
     position: absolute;
     border-bottom-right-radius:40px ;
     z-index: -1;
@@ -104,13 +104,14 @@ h4.line-.grey:before{
     align-items: center;
 }
 .logo h3:first-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: mediumaquamarine;
-    padding: 0px;
     width: 50px;
     height: 50px;
-    line-height: 50px;
     border-radius: 50%;
-    text-align: center;
+    
     
 }
 .logo *{
@@ -119,11 +120,12 @@ h4.line-.grey:before{
 
 .navbar{
     display: flex;
-    justify-content: center;
+    justify-content:space-between;
     align-items: center;
     margin-top: 4vw;
     color: white;
     position: sticky;
+    width: 100%;
     top: 0;
 }
 .navbar .nav ul li{
@@ -133,7 +135,6 @@ h4.line-.grey:before{
     cursor: pointer;
 }
 .navbar .logo{
-    width: 25%;
     text-align: center;
 }
 .nav{
@@ -164,7 +165,8 @@ h4.line-.grey:before{
 /* Body */
 .container-1st{
     margin-top: 6vw;
-    height: 100vh;
+    height: 120vh;
+    display: flex;
 }
 .container-1st .description{
     color: white;
@@ -239,15 +241,18 @@ h4.line-.grey:before{
 .container-3rd{
     display: flex;
     position: relative;
+    width: 100%;
     justify-content: space-between;
-    
     padding: 130px 0px;
     height: fit-content;
     color: white;
 
 }
-.container-3rd .content-section:first-child{
-    width: 30%;
+.container-3rd > *:not(.bg){
+    width: 100%;
+}
+.container-3rd .content-section:first-child h2{
+    width: 70%;
 }
 
 .container-3rd .content-section:first-child div{
@@ -262,9 +267,7 @@ h4.line-.grey:before{
     height: 50px;
     
 }
-.container-3rd .content-section:nth-child(2){
-    width: 55%;
-}
+
 
 .bg{
     left: -200;
@@ -278,7 +281,7 @@ h4.line-.grey:before{
 
 
 .container-4th .content-section{
-    width: 50%;
+    width: 100%;
     padding: 200px 0;
 }
 .container-4th .content-section ul{
@@ -309,7 +312,7 @@ h4.line-.grey:before{
     left: 0;
     right: 0;
     background: #EDFCFD;
-    height: 150vh;
+    height: 200vh;
     z-index: -1;
 }
 
@@ -319,7 +322,7 @@ h4.line-.grey:before{
     
 }
 .container-5th .content-section{
-    width: 50%;
+    width: 100%;
 }
 .container-5th .content-section:nth-child(1) img{
     width: 100%;
@@ -376,7 +379,6 @@ h4.line-.grey:before{
 }
 .container-6th .card-list{
     display: flex;
-    justify-content: center;
     text-align: left;
     column-gap: 30px;
     width: 100%;
@@ -384,7 +386,7 @@ h4.line-.grey:before{
 }
 .container-6th .card{
     background: white;
-    width: 100%;
+    width: 33%;
     padding: 60px 0 60px 60px;
     border-radius: 10px;
 }
@@ -436,11 +438,13 @@ h4.line-.grey:before{
 }
 .container-7th{
     padding :200px 0;
-    display: flex;
-    column-gap: 30px;
 }
-.container-7th .content-section{
-    width: 50%;
+.container-7th .content-section:first-child{
+    float: left;
+    height: fit-content;
+}
+.container-7th .content-section div{
+    bottom:0;
 }
 
 .container-7th .content-section div *{
@@ -451,8 +455,9 @@ h4.line-.grey:before{
     width: 100%;
     
 }
-.container-7th .content-section:first-child{
+.container-7th .content-section{
     position: relative;
+    width: 50%
 }
 .container-7th .content-section img:nth-child(2){
     position: absolute;
@@ -462,7 +467,7 @@ h4.line-.grey:before{
 }
 .container-7th .content-section div{
     background: #00BAC7;
-    padding: 25px 35px;
+    padding: 1vw 1.5vw;
     width: fit-content;
     color: white;
     position: absolute;
@@ -473,44 +478,43 @@ h4.line-.grey:before{
 .container-8th{
     background-color: #EDFCFD;
     padding: 100px;
-    position: relative;
     height: 100vh;
 }
-.container-8th .content-section{
+.container-8th .content-section:first-child{
     display: flex;
-    column-gap: 30px;
-    align-items: flex-start;
+    column-gap: 21px;
 }
-.container-8th .content-section:first-child div{
+.container-8th .content-section:first-child>*{
     width: 50%;
-
-}
-.container-8th .content-section:first-child *{
-    margin: 0;
 }
 .container-8th .content-section:nth-child(2){
-    position: absolute;
-    left: -30;
-    right: -30;
-    top: 40%;
     
+    width: 100%;
+    position: relative;
+    max-height: 50vh;
 }
-.container-8th .content-section:nth-child(2) .testimoni{
+.container-8th .content-section:nth-child(2)> div{
     display: flex;
+    column-gap: 15px;
+    position: absolute;
+    top: 40;
+    left: -120;
+    right: -120;
+}
+.testimoni{
+    display: flex;
+    justify-content: space-between;
     flex-direction: column;
-    border-radius: 20px;
-    background: white;
-    box-shadow: 0px 30px 60px rgba(0, 186, 199, 0.08);
+    row-gap: 21px;
+    padding-top: 21px;
+    background:white;
     padding: 30px;
-    row-gap: 10px;
-    flex-grow: 1;
-
 }
 .testimoni div{
     display: flex;
     column-gap: 17px;
 }
-.testimoni div span h4, p{
+.testimoni *{
     margin: 0;
 }
 .testimoni div img{
@@ -532,7 +536,6 @@ h4.line-.grey:before{
 .container-9th div{
     display: flex;
     column-gap: 30px;
-    width: 50%;
 }
 .container-9th>h4{
     padding: 10px 20px;
@@ -648,3 +651,4 @@ h4.line-.grey:before{
     z-index: -1;
     background: #272D3E;
 }
+
