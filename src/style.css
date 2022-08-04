@@ -1,6 +1,6 @@
-:root{
+/* :root{
     --light-blue:#00BAC7;
-}
+} */
 
 body{
     padding: 0px 9% 0px 9%;
@@ -72,14 +72,14 @@ div .box2{
 
 h4.line-{
     display:flex;
-    color: var(--light-blue);
+    color: #00BAC7;
     flex-direction: row;
     width: fit-content;
 }
 h4.line-:before {
     content: "";
     width: 20px;
-    border-bottom: 2px solid var(--light-blue);
+    border-bottom: 2px solid #00BAC7;
     margin: auto;
 }
 h4.line-.white{
@@ -150,13 +150,15 @@ h4.line-.grey:before{
 }
 
 .button button{
-    padding: 15px 30px;
+    
     border: none;
-    width: 10vw;
+    height: fit-content;
+    padding: 15px 30px;
 }
 .button {
     width: 25%;
-    text-align: right;
+    display: flex;
+    justify-content: right;
 }
 
 /* Body */
@@ -183,9 +185,10 @@ h4.line-.grey:before{
 
 .desc-content button{
     width: 40%;
+    min-width: 200px;
     border:none;
     color: white;
-    background: var(--light-blue);
+    background: #00BAC7;
     box-shadow: 0px 15px 30px rgba(0, 186, 199, 0.33);
 }
 
@@ -268,7 +271,7 @@ h4.line-.grey:before{
     top: -100;
     right: -200;
     bottom: 0;
-    background: var(--light-blue);
+    background: #00BAC7;
     position: absolute;
     z-index: -1;
 }
@@ -290,7 +293,7 @@ h4.line-.grey:before{
 }
 
 .container-4th .content-section:nth-child(2) div{
-    background: var(--light-blue);
+    background: #00BAC7;
     display: flex;
     justify-content: space-around;
     padding: 20px;
@@ -350,7 +353,7 @@ h4.line-.grey:before{
 }
 .container-6th .content-section h4{
     background: rgba(198, 244, 248, 0.1);
-    color: var(--light-blue);
+    color: #00BAC7;
     font-weight: 700;
     font-size: 14px;
     line-height: 18px;
@@ -386,7 +389,7 @@ h4.line-.grey:before{
     border-radius: 10px;
 }
 .container-6th .card h6{
-    color: var(--light-blue);
+    color: #00BAC7;
     font-weight: 500;
     font-size: 16px;
     line-height: 21px;
@@ -412,7 +415,7 @@ h4.line-.grey:before{
     list-style-image: url(/src/foto/danger.png);
 }
 .container-6th button{
-    background: var(--light-blue);
+    background: #00BAC7;
     box-shadow: 0px 30px 60px rgba(74, 114, 255, 0.25);
     color: white;
     border: none;
@@ -458,7 +461,7 @@ h4.line-.grey:before{
     z-index: -1;
 }
 .container-7th .content-section div{
-    background: var(--light-blue);
+    background: #00BAC7;
     padding: 25px 35px;
     width: fit-content;
     color: white;
@@ -534,7 +537,7 @@ h4.line-.grey:before{
 .container-9th>h4{
     padding: 10px 20px;
     background: #EDFCFD;
-    color: var(--light-blue);
+    color: #00BAC7;
     border-radius: 100px;
 }
 .container-9th h2{
@@ -551,7 +554,7 @@ h4.line-.grey:before{
     height: 24px;
 }
 .container-9th div button{
-    background: var(--light-blue);
+    background: #00BAC7;
     box-shadow: 0px 15px 30px rgba(0, 186, 199, 0.33);
     border-radius: 100px;
     color: white;
@@ -597,7 +600,7 @@ h4.line-.grey:before{
     background: rgba(255, 255, 255, 0.05);
 }
 .footer .content-section:first-child button:last-child{
-    background: var(--light-blue);
+    background: #00BAC7;
     box-shadow: 0px 15px 30px rgba(0, 186, 199, 0.33);
 }
 .footer .content-section:nth-child(2){
@@ -623,7 +626,7 @@ h4.line-.grey:before{
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background: var(--light-blue);
+    background: #00BAC7;
 }
 .footer .content-section:nth-child(2) p{
     color: rgba(255, 255, 255, 0.8);
